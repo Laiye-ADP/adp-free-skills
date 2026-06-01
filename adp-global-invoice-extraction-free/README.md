@@ -70,39 +70,258 @@ print(response.json())
 ```
 
 ### Step 3: Result Example
+
+| Field | Type | Description |
+|------|------|------|
+| `success` | boolean | Request status |
+| `doc_type` | string | Identified document type: `invoice` or `receipt` |
+| `extraction_result` | array | List of extracted fields and values |
+| `aigc` | object | Metadata about the AIGC processing, including labels, producer info, and processing types |
+| `upgrade_message` | string | Message prompting users to register for enhanced features |
+| `signup_url` | string | URL for user registration to unlock full features |
+
 ```json
 {
-  "success": true,
-  "doc_type": "invoice",
-  "extraction_result": [
-    {
-      "field_key": "invoice_number",
-      "field_name": "Invoice Number",
-      "field_values": [
+    "success": true,
+    "doc_type": "invoice",
+    "extraction_result": [
         {
-          "field_value": "INV-2024-001234",
-          "field_confidence": 0.99,
-          "references": [{ "search_text": "INV-2024-001234" }]
+            "field_key": "invoice_number",
+            "field_name": "发票号码",
+            "field_values": [
+                {
+                    "field_value": "09071666",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "09071666"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "invoice_date",
+            "field_name": "发票日期",
+            "field_values": [
+                {
+                    "field_value": "2019-11-28",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "2019-11-28"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "supplier_name",
+            "field_name": "供应商名称",
+            "field_values": [
+                {
+                    "field_value": "北京******公司",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "北京******公司"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "supplier_vat_number",
+            "field_name": "供应商增值税号",
+            "field_values": [
+                {
+                    "field_value": "9111******4393T",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "9111******4393T"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "customer_name",
+            "field_name": "客户名称",
+            "field_values": [
+                {
+                    "field_value": "湖南*******公司",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "湖南*******公司"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "currency",
+            "field_name": "币种",
+            "field_values": [
+                {
+                    "field_value": "CNY",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "CNY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "total_amount",
+            "field_name": "总金额（含税）",
+            "field_values": [
+                {
+                    "field_value": "¥1600.00",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "¥1600.00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "line_items",
+            "field_name": "商品/服务明细表格",
+            "table_values": [
+                [
+                    {
+                        "field_key": "line_items_item_code",
+                        "field_name": "项目代码",
+                        "field_values": [
+                            {
+                                "field_value": "",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_description",
+                        "field_name": "描述",
+                        "field_values": [
+                            {
+                                "field_value": "*住宿服务*住宿服务",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "*住宿服务*住宿服务"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_quantity",
+                        "field_name": "数量",
+                        "field_values": [
+                            {
+                                "field_value": "2",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_unit_price",
+                        "field_name": "单价",
+                        "field_values": [
+                            {
+                                "field_value": "754.716981132",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "754.716981132"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_total_amount",
+                        "field_name": "总金额",
+                        "field_values": [
+                            {
+                                "field_value": "1509.43",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "1509.43"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_rate",
+                        "field_name": "税率",
+                        "field_values": [
+                            {
+                                "field_value": "6%",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "6%"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_tax",
+                        "field_name": "税金",
+                        "field_values": [
+                            {
+                                "field_value": "90.57",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "90.57"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
         }
-      ]
+    ],
+    "aigc": {
+        "Label": "AIGCLabelType.AI_GENERATED",
+        "ContentProducer": "001191110108587659081E10001",
+        "ProduceID": "e3563f165b4011f19f02d85ed35661fd",
+        "ReservedCode1": "34c55657beb0071fecf8abce14b0cdee",
+        "ContentPropagator": "001191110108587659081E10001",
+        "PropagateID": "e3563f165b4011f19f02d85ed35661fd",
+        "ReservedCode2": "34c55657beb0071fecf8abce14b0cdee",
+        "ProcessingTypes": [
+            "ocr",
+            "llm_extract"
+        ]
     },
-    {
-      "field_key": "total_amount",
-      "field_name": "Total Amount",
-      "field_values": [
-        {
-          "field_value": "1,250.00",
-          "field_confidence": 0.98,
-          "references": [{ "search_text": "1,250.00" }]
-        }
-      ]
-    }
-  ],
-  "upgrade_message": "Sign up for an ADP account to unlock customizable extraction fields, continuously optimized performance and high-concurrency processing.",
-  "signup_url": "https://adp.laiye.com/?utm_source=promotions",
-  "aigc": { ... }
+    "upgrade_message": "注册即可获得100积分/月，解锁全部能力，含多层税率计算+识别能力自主进化+更多字段与更高性能",
+    "signup_url": "https://adp.laiye.com/"
 }
 ```
+
 ## 📄 Extraction Field Reference
 
 ## Text Fields
@@ -119,7 +338,6 @@ print(response.json())
 ## Table Fields
 | field_key         | field_name (example) | Description                                                     |
 |-------------------|----------------------|-----------------------------------------------------------------|
-| `line_items`        | Line Items           | Table containing detailed product/service items.                |
 | `item_code`         | Item Code            | Code/SKU of the line item.                                      |
 | `description`       | Description          | Description of the line item.                                   |
 | `quantity`          | Quantity             | Quantity of the line item.                                      |
@@ -134,21 +352,19 @@ print(response.json())
 | `field_key` | string | Field identifier |
 | `field_name` | string | Field name |
 | `field_values` | array | List of extracted values (supports multiple values) |
-| `field_values[].field_value` | string | Extracted value |
-| `field_values[].field_confidence` | float | Confidence score (0–1) |
-| `table_values` | array[array] | Table fields for line items. Replaces `field_values` when present |
+| `field_values[].field_confidence` | float | Confidence score (0.0 - 1.0) |
+| `field_values[].references` | array | List of reference points in the document (e.g., bounding boxes, page numbers) |
+| `line_items_item_code` | string | Code/SKU of the line item |
+| `line_items_description` | string | Description of the line item |
+| `line_items_quantity` | string | Quantity of the line item |  
+| `line_items_unit_price` | string | Unit price of the line item |
+| `line_items_total_amount` | string | Total amount of the line item |
+| `line_items_tax_rate` | string | Tax rate for the line item |
+| `line_items_tax` | string | Tax amount for the line item |
+
 
 > **How to distinguish field types:** If `table_values` is present → table field, read from `table_values`; otherwise → regular field, read from `field_values`.
 
-## Response
-| Field | Type | Description |
-|------|------|------|
-| `success` | boolean | Request status |
-| `doc_type` | string | Identified document type: `invoice` or `receipt` |
-| `extraction_result` | array | List of structured extracted fields, compliant with ADP standard API format |
-| `upgrade_message` | string | Registration guide text (displayed in Chinese or English based on deployment region) |
-| `signup_url` | string | Link to the registration page |
-| `aigc` | object | AIGC content compliance label (in compliance with China's AIGC content labeling regulations) |
 
 ## ⚠️ Usage Limits
 

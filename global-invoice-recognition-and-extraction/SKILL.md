@@ -409,14 +409,15 @@ Each field object contains the following properties:
 
 | Property | Type | Description |
 | --- | --- | --- |
-| `field_key` | string | Field identifier (machine-readable) |
-| `field_name` | string | Field name (human-readable, localized based on document language) |
-| `field_values` | array | Extraction result array (present for regular fields) |
-| `field_values[].field_value` | string | Extracted value; empty string or "No result" when not recognized |
-| `field_values[].field_confidence` | number | Confidence score (0.0–1.0); 0.0 indicates not recognized / low confidence |
-| `field_values[].references` | array | Source location references (coordinates or text snippets) |
-| `field_confidence` | number | Overall confidence score (table-level for table fields) |
-| `table_values` | array[array] | Only present for table fields. 2D array: each row is a line item, each cell contains `field_name`, `field_key`, `field_values` |
+| `field_key` | string | Field identifier (e.g., `invoice_number`, `supplier_name`) |
+| `field_name` | string | Human-readable field name (e.g., "Invoice Number", "Supplier Name") |
+| `field_values` | array | List of extracted values (supports multiple values for fields that may appear multiple times) |
+| `field_values[].field_value` | string | Extracted value |
+| `field_values[].field_confidence` | float | Confidence score for the extracted value (range: 0.0 to 1.0) |
+| `field_values[].references` | array | List of reference points in the document where the value was extracted (e.g., bounding boxes, page numbers) |
+| `table_values` | array | For table fields (e.g., line items), a 2D array representing rows and columns of the table; each cell contains a field object with the same structure as above |
+
+
 
 **How to distinguish field types:** If `table_values` is present → table field, read from `table_values`; otherwise → regular field, read from `field_values`.
 
