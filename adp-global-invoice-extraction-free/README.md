@@ -374,7 +374,7 @@ print(response.json())
 | Page Count | Single page only. Multi-page PDF files will be rejected |
 | Supported Formats | jpeg, .jpg, .png, .bmp, .tiff, .pdf, .doc, .docx, .xlsx, .ofd |
 | URL Accessibility | Publicly accessible HTTP/HTTPS URL. Private network or internal IP addresses are not supported |
-| Per IP per minute | 5 requests (within any consecutive 60 seconds) |
+| Per IP per minute | 30 requests (within any consecutive 60 seconds) |
 | Per IP per day | 30 requests |
 | daily pool | 5,000 requests |
 
@@ -399,9 +399,9 @@ When the limit is exceeded, the API returns HTTP `429` with registration guidanc
 | 400 | `file_too_large` | File size exceeds 2 MB |
 | 400 | `multi_page` | Multi-page PDF detected. Only single-page files are supported |
 | 400 | `unsupported_format` | Unsupported file format |
-| 429 | `rate_limited_minute` | Exceeded per-IP minute limit (5 requests within 60 seconds) |
-| 429 | `rate_limited_day` | Exceeded per-IP daily limit (50 requests) |
-| 429 | `rate_limited_global` | Exceeded global daily limit (10,000 requests) |
+| 429 | `rate_limited_minute` | Exceeded per-IP minute limit (30 requests within 60 seconds) |
+| 429 | `rate_limited_day` | Exceeded per-IP daily limit (30 requests) |
+| 429 | `rate_limited_global` | Exceeded global daily limit (5,000 requests) |
 | 500 | `extraction_failed` | Server processing failed. Please try again later |
 
 ## 🚀 Advanced Usage

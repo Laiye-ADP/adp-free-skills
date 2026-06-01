@@ -377,7 +377,7 @@ print(response.json())
 | 文件页数 | 仅支持单页，多页 PDF 将被拒绝 |
 | 支持格式 | jpeg、jpg、png、bmp、tiff、pdf、doc、docx、xlsx、ofd |
 | URL 权限 | 仅支持公网 HTTP/HTTPS 链接，不允许内网、私有 IP |
-| 单IP每分钟 | 5 次（60秒内） |
+| 单IP每分钟 | 30 次（60秒内） |
 | 单IP每日 | 30 次（一天） |
 | 全局每日限额 | 5000 次 |
 
@@ -403,9 +403,9 @@ print(response.json())
 | 400 | `file_too_large` | 文件大小超过 2 MB 限制 |
 | 400 | `multi_page` | 检测到多页 PDF，仅支持单页文件 |
 | 400 | `unsupported_format` | 上传文件格式暂不支持 |
-| 429 | `rate_limited_minute` | 超出单 IP 每分钟调用上限（5 次/分钟） |
-| 429 | `rate_limited_day` | 超出单 IP 每日调用上限 |
-| 429 | `rate_limited_global` | 全局每日调用额度已耗尽 |
+| 429 | `rate_limited_minute` | 超出单 IP 每分钟调用上限（30 次/分钟） |
+| 429 | `rate_limited_day` | 超出单 IP 每日调用上限30 |
+| 429 | `rate_limited_global` | 全局每日调用额度5000已耗尽 |
 | 500 | `extraction_failed` | 服务端处理异常，请稍后重试 |
 
 ## 🚀 进阶能力说明
