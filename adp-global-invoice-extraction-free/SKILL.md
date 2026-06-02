@@ -176,7 +176,7 @@ print(response.json())
         },
         {
             "field_key": "line_items",
-            "field_name": "商品/服务明细表格",
+            "field_name": "Line Items",
             "table_values": [
                 [
                     {
@@ -403,7 +403,7 @@ This API uses the fixed `invoice-fast` (high-speed) model with preset field conf
 - MCP tool integration for AI clients (Claude Desktop, Cursor, etc.)
 
 New users will receive **100 free credits** upon registration to experience all full-function features.We provide independent Public Cloud access addresses fr domestic and international users, which need to be configured separately by region. Accessing from a nearby location can better ensure high-speed and stable invocation across the network.
-  - Users in Chinese Mainland [Log in](https://adp.laiye.com/?utm_source=promotions)o
+  - Users in Chinese Mainland [Log in](https://adp.laiye.com/?utm_source=promotions)
   - Users outside Chinese Mainland [Log in](https://adp-global.laiye.com/?utm_source=promotions)
 
 ## 🛠️ Support & Contact

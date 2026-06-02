@@ -351,7 +351,7 @@ adp extract url <file URL> --app-id YOUR_APP_ID
   },
   {
     "field_key": "line_items",
-    "field_name": "Product Details Table",
+    "field_name": "Line Items",
     "references": [],
     "field_confidence": 1.0,
     "table_values": [
