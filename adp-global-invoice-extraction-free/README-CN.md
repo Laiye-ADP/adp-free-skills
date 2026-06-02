@@ -422,12 +422,9 @@ print(response.json())
 - 适配更多文档类型（采购单、证件、国内发票等）
 - 对接Claude Desktop、Cursor等AI客户端，支持MCP工具集成
 
-| 版本 | 访问地址 |
-|---------|-----|
-| **国际版** | [adp-global.laiye.com](https://adp-global.laiye.com/?utm_source=promotions) |
-| **国内版** | [adp.laiye.com](https://adp.laiye.com/?utm_source=promotions) |
-
-新用户注册即可领取 **100 免费积分**，体验全部完整功能。
+新用户注册即送 **100 免费点数**，试用全部完整版功能。国内外用户分设独立公有云接入地址，按地区分开配置，就近接入可实现跨网高速稳定调用。
+  - 中国地区 [登录](https://adp.laiye.com/?utm_source=promotions)
+  - 全球地区 [登录](https://adp-global.laiye.com/?utm_source=promotions)
 
 
 ## 📞 支持与联系

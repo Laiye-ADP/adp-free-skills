@@ -418,12 +418,9 @@ This API uses the fixed `invoice-fast` (high-speed) model with preset field conf
 - Support for more document types (purchase orders, ID cards, domestic invoices, etc.)
 - MCP tool integration for AI clients (Claude Desktop, Cursor, etc.)
 
-| Version | URL |
-|---------|-----|
-| **Global** | [adp-global.laiye.com](https://adp-global.laiye.com/?utm_source=promotions) |
-| **China** | [adp.laiye.com](https://adp.laiye.com/?utm_source=promotions) |
-
-New users will receive **100 free credits** upon registration to experience all full-function features.
+New users will receive **100 free credits** upon registration to experience all full-function features.We provide independent Public Cloud access addresses fr domestic and international users, which need to be configured separately by region. Accessing from a nearby location can better ensure high-speed and stable invocation across the network.
+  - Users in Chinese Mainland [Log in](https://adp.laiye.com/?utm_source=promotions)
+  - Users outside Chinese Mainland [Log in](https://adp-global.laiye.com/?utm_source=promotions)
 
 
 ## 🛠️ Support & Contact

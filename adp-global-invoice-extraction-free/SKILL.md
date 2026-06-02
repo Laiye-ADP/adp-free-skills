@@ -71,7 +71,7 @@ print(response.json())
     "extraction_result": [
         {
             "field_key": "invoice_number",
-            "field_name": "发票号码",
+            "field_name": "Invoice Number",
             "field_values": [
                 {
                     "field_value": "09071666",
@@ -86,7 +86,7 @@ print(response.json())
         },
         {
             "field_key": "invoice_date",
-            "field_name": "发票日期",
+            "field_name": "Invoice Date",
             "field_values": [
                 {
                     "field_value": "2019-11-28",
@@ -101,14 +101,14 @@ print(response.json())
         },
         {
             "field_key": "supplier_name",
-            "field_name": "供应商名称",
+            "field_name": "Supplier Name",
             "field_values": [
                 {
-                    "field_value": "北京******公司",
+                    "field_value": "Beijing******Company",
                     "field_confidence": 0.0,
                     "references": [
                         {
-                            "search_text": "北京******公司"
+                            "search_text": "Beijing******Company"
                         }
                     ]
                 }
@@ -116,7 +116,7 @@ print(response.json())
         },
         {
             "field_key": "supplier_vat_number",
-            "field_name": "供应商增值税号",
+            "field_name": "Supplier VAT Number",
             "field_values": [
                 {
                     "field_value": "9111******4393T",
@@ -131,14 +131,14 @@ print(response.json())
         },
         {
             "field_key": "customer_name",
-            "field_name": "客户名称",
+            "field_name": "Customer Name",
             "field_values": [
                 {
-                    "field_value": "湖南*******公司",
+                    "field_value": "Hunan******Company",
                     "field_confidence": 0.0,
                     "references": [
                         {
-                            "search_text": "湖南*******公司"
+                            "search_text": "Hunan******Company"
                         }
                     ]
                 }
@@ -146,7 +146,7 @@ print(response.json())
         },
         {
             "field_key": "currency",
-            "field_name": "币种",
+            "field_name": "Currency",
             "field_values": [
                 {
                     "field_value": "CNY",
@@ -161,7 +161,7 @@ print(response.json())
         },
         {
             "field_key": "total_amount",
-            "field_name": "总金额（含税）",
+            "field_name": "Total Amount (Tax Included)",
             "field_values": [
                 {
                     "field_value": "¥1600.00",
@@ -181,7 +181,7 @@ print(response.json())
                 [
                     {
                         "field_key": "line_items_item_code",
-                        "field_name": "项目代码",
+                        "field_name": "Item Code",
                         "field_values": [
                             {
                                 "field_value": "",
@@ -196,14 +196,14 @@ print(response.json())
                     },
                     {
                         "field_key": "line_items_description",
-                        "field_name": "描述",
+                        "field_name": "Description",
                         "field_values": [
                             {
-                                "field_value": "*住宿服务*住宿服务",
+                                "field_value": "Accommodation Service*Accommodation Service",
                                 "field_confidence": 0.0,
                                 "references": [
                                     {
-                                        "search_text": "*住宿服务*住宿服务"
+                                        "search_text": "*Accommodation Service*Accommodation Service"
                                     }
                                 ]
                             }
@@ -211,7 +211,7 @@ print(response.json())
                     },
                     {
                         "field_key": "line_items_quantity",
-                        "field_name": "数量",
+                        "field_name": "Quantity",
                         "field_values": [
                             {
                                 "field_value": "2",
@@ -226,7 +226,7 @@ print(response.json())
                     },
                     {
                         "field_key": "line_items_unit_price",
-                        "field_name": "单价",
+                        "field_name": "Unit Price",
                         "field_values": [
                             {
                                 "field_value": "754.716981132",
@@ -241,7 +241,7 @@ print(response.json())
                     },
                     {
                         "field_key": "line_items_total_amount",
-                        "field_name": "总金额",
+                        "field_name": "Total Amount",
                         "field_values": [
                             {
                                 "field_value": "1509.43",
@@ -256,7 +256,7 @@ print(response.json())
                     },
                     {
                         "field_key": "line_items_rate",
-                        "field_name": "税率",
+                        "field_name": "tax rate",
                         "field_values": [
                             {
                                 "field_value": "6%",
@@ -271,7 +271,7 @@ print(response.json())
                     },
                     {
                         "field_key": "line_items_tax",
-                        "field_name": "税金",
+                        "field_name": "tax",
                         "field_values": [
                             {
                                 "field_value": "90.57",
@@ -301,7 +301,7 @@ print(response.json())
             "llm_extract"
         ]
     },
-    "upgrade_message": "注册即可获得100积分/月，解锁全部能力，含多层税率计算+识别能力自主进化+更多字段与更高性能",
+    "upgrade_message": "Sign up to get 100 credits per month and unlock all features, including multi-tier tax calculation, self-evolving recognition capabilities, expanded fields and enhanced performance.",
     "signup_url": "https://adp.laiye.com/"
 }
 ```
@@ -402,13 +402,9 @@ This API uses the fixed `invoice-fast` (high-speed) model with preset field conf
 - Support for **more document types** (purchase orders, ID cards, domestic invoices, etc.)
 - MCP tool integration for AI clients (Claude Desktop, Cursor, etc.)
 
-| Version | URL |
-|---------|-----|
-| **Global Edition** | [adp-global.laiye.com](https://adp-global.laiye.com/?utm_source=promotions) |
-| **China Edition** | [adp.laiye.com](https://adp.laiye.com/?utm_source=promotions) |
-
-New users will receive **100 free credits** upon registration to experience all full-function features.
-
+New users will receive **100 free credits** upon registration to experience all full-function features.We provide independent Public Cloud access addresses fr domestic and international users, which need to be configured separately by region. Accessing from a nearby location can better ensure high-speed and stable invocation across the network.
+  - Users in Chinese Mainland [Log in](https://adp.laiye.com/?utm_source=promotions)o
+  - Users outside Chinese Mainland [Log in](https://adp-global.laiye.com/?utm_source=promotions)
 
 ## 🛠️ Support & Contact
 - **CLI User Guide:** [ADP CLI User Guide](https://laiye-tech.feishu.cn/wiki/YIaawiK2DimisZk5KfDc8a8cnLh)
