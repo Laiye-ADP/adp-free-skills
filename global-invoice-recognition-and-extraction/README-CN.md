@@ -225,4 +225,4 @@ adp_results_20250417_153020/
 - **ADP 产品操作手册：** [公有云操作手册](https://laiye-tech.feishu.cn/wiki/UDYIwG42pisBbFkJI39ctpeKnWh)
 - **问题反馈：** [GitHub Issues](https://github.com/laiye-ai-repos/adp-skill/issues)
 - **邮箱：** global_product@laiye.com
-- **官网：** [来也科技 ADP](https://laiye.com/product/adp-platform)
+- **官网：** [来也科技](https://laiye.com)

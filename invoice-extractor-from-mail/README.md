@@ -156,14 +156,13 @@ invoice-extractor-from-mail/
 
 ---
 
-## 📚 Resources
-
-- **ADP Portal**: [Chinese Mainland](https://adp.laiye.com/?utm_source=github) | [Outside Chinese Mainland](https://adp-global.laiye.com/?utm_source=github)
-- **CLI Documentation**: [ADP CLI User Guide](https://laiye-tech.feishu.cn/wiki/YIaawiK2DimisZk5KfDc8a8cnLh)
-- **API Documentation**: [OpenAPI User Guide](https://laiye-tech.feishu.cn/wiki/S1t2wYR04ivndKkMDxxcp2SFnKd)
-- **User Guide**: [Public Cloud Operation Manual](https://laiye-tech.feishu.cn/wiki/OfexwgVUQiOpEek4kO7c7NEJnAe)
-- **Feedback**: [GitHub Issues](https://github.com/laiye-ai/adp-cli/issues) | global_product@laiye.com
-- **Official Website**: [Laiye ADP](https://laiye.com)
+## 📞 Support and Contact
+- **CLI User Guide:** [ADP CLI User Guide](https://laiye-tech.feishu.cn/wiki/YIaawiK2DimisZk5KfDc8a8cnLh)
+- **API Documentation:** [Open API User Guide](https://laiye-tech.feishu.cn/wiki/S1t2wYR04ivndKkMDxxcp2SFnKd)
+- **ADP Product Manual:** [Public Cloud Manual](https://laiye-tech.feishu.cn/wiki/OfexwgVUQiOpEek4kO7c7NEJnAe)
+- **Issue Tracker:** [GitHub Issues](https://github.com/Laiye-ADP/adp-skills/issues)
+- **Email:** global_product@laiye.com
+- **Website:** [Laiye ADP](https://laiye.com/en/product/adp-platform)
 
 ---
 

@@ -216,11 +216,13 @@ We adopt a combined model of open-source tools + paid services: the CLI tool is 
 
 Free Quota: New users can receive **100 free credits** per month after registration, allowing them to experience full functionality
 
-## 📞 Support and Contact
-- **CLI Documentation**: [ADP CLI User Guide](https://laiye-tech.feishu.cn/wiki/YIaawiK2DimisZk5KfDc8a8cnLh)
-- **API Documentation**: [OpenAPI User Guide](https://laiye-tech.feishu.cn/wiki/S1t2wYR04ivndKkMDxxcp2SFnKd?from=from_copylink)
-- **User Guide**: [Public Cloud Operation Manual](https://laiye-tech.feishu.cn/wiki/OfexwgVUQiOpEek4kO7c7NEJnAe)
-- **Problem Feedback**: [GitHub Issues](https://github.com/laiye-ai/adp-cli/issues) | global_product@laiye.com
-- **Official Website**: [Laiye ADP](https://laiye.com/en/product/agentic-document-processing)
+## 🛠️ Support & Contact
+- **CLI User Guide:** [ADP CLI User Guide](https://laiye-tech.feishu.cn/wiki/YIaawiK2DimisZk5KfDc8a8cnLh)
+- **API Documentation:** [Open API User Guide](https://laiye-tech.feishu.cn/wiki/S1t2wYR04ivndKkMDxxcp2SFnKd)
+- **ADP Product Manual:** [Public Cloud Manual](https://laiye-tech.feishu.cn/wiki/OfexwgVUQiOpEek4kO7c7NEJnAe)
+- **Issue Tracker:** [GitHub Issues](https://github.com/Laiye-ADP/adp-skills/issues)
+- **Email:** global_product@laiye.com
+- **Website:** [Laiye ADP](https://laiye.com/en/product/adp-platform)
+
 
 Copyright © 2026 Laiye Technology (Beijing) Co., Ltd. All rights reserved.

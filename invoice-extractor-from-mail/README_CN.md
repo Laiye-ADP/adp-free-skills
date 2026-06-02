@@ -157,14 +157,13 @@ invoice-extractor-from-mail/
 
 ---
 
-## 📚 相关资料
-
-- **ADP 产品入口**：[中国大陆](https://adp.laiye.com/?utm_source=github) | [非中国大陆](https://adp-global.laiye.com/?utm_source=github)
-- **CLI 文档**：[ADP CLI 使用指南](https://laiye-tech.feishu.cn/wiki/YIaawiK2DimisZk5KfDc8a8cnLh)
-- **API 文档**：[OpenAPI 使用指南](https://laiye-tech.feishu.cn/wiki/S1t2wYR04ivndKkMDxxcp2SFnKd)
-- **产品手册**：[公有云操作手册](https://laiye-tech.feishu.cn/wiki/OfexwgVUQiOpEek4kO7c7NEJnAe)
-- **问题反馈**：[GitHub Issues](https://github.com/laiye-ai/adp-cli/issues) | global_product@laiye.com
-- **官方网站**：[来也科技](https://laiye.com)
+## 📞 支持与联系
+- **CLI 使用指南：** [ADP CLI 使用指南](https://laiye-tech.feishu.cn/wiki/Hz3Vw1IQki3YQtk33gLcSdwSndc)
+- **API 接口文档：** [Open API 使用指南](https://laiye-tech.feishu.cn/wiki/PO9Jw4cH3iV2ThkMPW2c539pnkc)
+- **ADP 产品操作手册：** [公有云操作手册](https://laiye-tech.feishu.cn/wiki/UDYIwG42pisBbFkJI39ctpeKnWh)
+- **问题反馈：** [GitHub Issues](https://github.com/laiye-ai-repos/adp-skill/issues)
+- **邮箱：** global_product@laiye.com
+- **官网：** [来也科技](https://laiye.com)
 
 ---
 
