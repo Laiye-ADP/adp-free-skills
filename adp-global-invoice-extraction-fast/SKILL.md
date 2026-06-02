@@ -7,12 +7,12 @@ description: High-performance API for global invoice recognition. Each page is p
 Developed by the ADP Intelligent Document Processing team of Laiye Technology. Tailored for **global cross-border finance, automation, system integration and high-concurrency production scenarios**, it delivers low-latency, high-throughput, full-format and multi-language intelligent extraction for invoices, bills and receipts. It fully supports structured standard documents, unstructured overseas purchase invoices and receipts. Whether it is electronic PDFs, scanned copies or images, **each page can be parsed and output as standardized JSON structured data in as fast as 5 seconds**. It supports enterprise-level batch processing and 7×24 stable service, empowering end-to-end workflow automation, intelligent reconciliation and data warehousing.
 
 ## ⭐ Core Advantages of High-Speed Edition
-⚡ Ultra-fast Processing: Each page is parsed within 5 seconds. It supports large-scale concurrent calls to meet high-intensity processing requirements in production environments.
-✅ Enterprise-grade High-throughput Architecture: Low-latency response and stable processing for massive files.
-🌐 Multi-language Support: Recognizes invoices and receipts in English, Japanese, Korean, German, French, Thai and hundreds of other languages.
-📄 Full-format Compatibility: Adapts to VAT invoices worldwide, tax documents from Southeast Asia, unstructured receipts and mixed-format vouchers.
-🎯 Over 99% Extraction Accuracy: Accurately extracts key fields and greatly reduces costs for manual verification, translation and data entry.
-🤖 Continuous AI Optimization: The model keeps iterating and improving based on business data, and supports customized adaptation for enterprises.
+⚡ Ultra-fast Processing: Each page is parsed within 5 seconds. It supports large-scale concurrent calls to meet high-intensity processing requirements in production environments.  
+✅ Enterprise-grade High-throughput Architecture: Low-latency response and stable processing for massive files.  
+🌐 Multi-language Support: Recognizes invoices and receipts in English, Japanese, Korean, German, French, Thai and hundreds of other languages.  
+📄 Full-format Compatibility: Adapts to VAT invoices worldwide, tax documents from Southeast Asia, unstructured receipts and mixed-format vouchers.  
+🎯 Over 99% Extraction Accuracy: Accurately extracts key fields and greatly reduces costs for manual verification, translation and data entry.  
+🤖 Continuous AI Optimization: The model keeps iterating and improving based on business data, and supports customized adaptation for enterprises.  
 
 ## 📌 Application Scenarios
 | User Group | Usage Scenarios |
