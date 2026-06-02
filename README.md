@@ -161,9 +161,10 @@ This product is free to use, copy and distribute for non-commercial purposes. Co
 - **CLI User Guide:** [ADP CLI User Guide](https://laiye-tech.feishu.cn/wiki/YIaawiK2DimisZk5KfDc8a8cnLh)
 - **API Documentation:** [Open API User Guide](https://laiye-tech.feishu.cn/wiki/S1t2wYR04ivndKkMDxxcp2SFnKd)
 - **ADP Product Manual:** [Public Cloud Manual](https://laiye-tech.feishu.cn/wiki/OfexwgVUQiOpEek4kO7c7NEJnAe)
-- **Issue Tracker:** [GitHub Issues](https://github.com/laiye-ai/adp-cli/issues)
+- **Issue Tracker:** [GitHub Issues](https://github.com/Laiye-ADP/adp-skills/issues)
 - **Email:** global_product@laiye.com
 - **Website:** [Laiye ADP](https://laiye.com/en/product/adp-platform)
+
 ---
 
 <div align="center">
