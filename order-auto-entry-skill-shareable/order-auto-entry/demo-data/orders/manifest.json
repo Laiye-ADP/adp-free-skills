@@ -1,0 +1,26 @@
+[
+  {
+    "scenario": "cn-pass",
+    "file": "LYCN-PO-202606-001_BlueOcean_MFG.pdf",
+    "description": "中文单行订单，编码和价格均可匹配，自动通过",
+    "html_source": "../orders-html/LYCN-PO-202606-001_BlueOcean_MFG.html"
+  },
+  {
+    "scenario": "vn-mixed",
+    "file": "LYVN-PO-202606-018_SaoViet_Electronics.pdf",
+    "description": "越南客户多行订单，一行通过，一行客户订单商品号未匹配",
+    "html_source": "../orders-html/LYVN-PO-202606-018_SaoViet_Electronics.html"
+  },
+  {
+    "scenario": "th-new-customer",
+    "file": "TH-NW-2026-0620_NewWave_Automation.pdf",
+    "description": "泰国新客户订单，物料可匹配但无历史成交，需要人工确认",
+    "html_source": "../orders-html/TH-NW-2026-0620_NewWave_Automation.html"
+  },
+  {
+    "scenario": "de-price-issue",
+    "file": "LYDE-PO-202606-019_Rheinwerk_Robotics_GmbH.pdf",
+    "description": "德国订单，报价有效期已过且价格偏离，需要人工复核",
+    "html_source": "../orders-html/LYDE-PO-202606-019_Rheinwerk_Robotics_GmbH.html"
+  }
+]

@@ -1,0 +1,80 @@
+<!doctype html><meta charset="utf-8"><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: white;
+  color: #111827;
+  font-family: Arial, "Arial Unicode MS", "PingFang SC", "Hiragino Sans", sans-serif;
+  font-size: 10.4px;
+  line-height: 1.22;
+}
+.page {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  padding: 10mm 10mm 8mm;
+  position: relative;
+  background: #fff;
+}
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+td, th { border: 1px solid #111827; padding: 4px 5px; vertical-align: top; word-break: break-word; }
+th { font-weight: 900; text-align: center; background: #d9dde3; }
+.num { text-align: right; white-space: nowrap; }
+.center { text-align: center; }
+.label { font-weight: 900; }
+.muted { color: #555; }
+.small { font-size: 8.5px; }
+.footer {
+  position: absolute;
+  left: 10mm;
+  right: 10mm;
+  bottom: 7mm;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 8.3px;
+}
+.sigline { border-top: 1px dashed #111827; width: 72%; margin: 7mm auto 2mm; }
+
+    .top { display:grid; grid-template-columns: 48mm 1fr 43mm; gap:7mm; align-items:start; }
+    .logo { background:#0f5f8f; color:white; padding:8px; height:28mm; border-radius:2px; }
+    .logo .big { font-size:19px; font-weight:900; }
+    .title { color:#0f5f8f; text-align:center; font-size:23px; font-weight:900; padding-top:5px; }
+    .subtitle { text-align:center; color:#4b5563; margin-top:3px; }
+    .summary { border:2px solid #0f5f8f; padding:6px; }
+    .summary b { color:#0f5f8f; }
+    .band { background:#eaf4fb; border-left:5px solid #0f5f8f; padding:6px; font-weight:900; margin:7mm 0 3mm; }
+    .grid { display:grid; grid-template-columns:1.05fr .95fr; gap:4mm; }
+    .info td:first-child { width:28mm; background:#f8fafc; font-weight:900; }
+    .items th { background:#dbeafe; }
+    .items td { height:34px; }
+    .bottom { display:grid; grid-template-columns:1fr 70mm; gap:4mm; margin-top:5mm; }
+    .box { border:1px solid #111827; padding:7px; min-height:33mm; }
+    .total { border:1.5px solid #0f5f8f; }
+    .total td { border:0; border-bottom:1px solid #d1d5db; }
+    .grand td { background:#0f5f8f; color:white; font-weight:900; }
+    .qa { display:grid; grid-template-columns:repeat(3,1fr); border:1px solid #111; border-right:0; margin-top:6mm; }
+    .qa > div { height:29mm; border-right:1px solid #111; text-align:center; padding-top:5px; }
+  </style><section class="page">
+    <div class="top"><div class="logo"><div class="big">蓝海智造</div><div>BlueOcean MFG</div><div class="small" style="margin-top:8px">Supplier Portal PO</div></div><div><div class="title">采购订单</div><div class="subtitle">PURCHASE ORDER / 来也科技供货确认单</div></div><div class="summary"><b>PO No.</b><br>LYCN-PO-202606-001<br><b>Date</b><br>2026-06-12<br><b>Currency</b> USD</div></div>
+    <div class="band">订单双方信息</div>
+    <div class="grid"><table class="info"><tr><td>买方</td><td><b>深圳蓝海智能制造有限公司</b><br>Shenzhen BlueOcean Intelligent Manufacturing Co., Ltd.</td></tr><tr><td>收货地址</td><td>深圳市宝安区智能制造产业园 2 号仓</td></tr><tr><td>联系人</td><td>采购计划部 陈静 | purchase@blueocean.example</td></tr></table><table class="info"><tr><td>卖方</td><td><b>来也科技有限公司</b><br>Laiye Technology Co., Ltd.</td></tr><tr><td>付款条款</td><td>Net 30</td></tr><tr><td>贸易条款</td><td>FCA Shenzhen</td></tr></table></div>
+    <div class="band">商品明细</div>
+    <table class="items"><tr><th style="width:8%">行号</th><th style="width:16%">客户订单商品号</th><th>商品名称/规格</th><th style="width:10%">品牌</th><th style="width:8%">单位</th><th style="width:8%">数量</th><th style="width:10%">单价</th><th style="width:10%">金额</th></tr>
+    <tr>
+      <td class="center">1</td>
+      <td>XY0006</td>
+      <td>Solder paste / 锡膏 WTO-LF4000A-6</td>
+      <td>Laiye</td>
+      <td class="center">KG</td>
+      <td class="num">20</td>
+      <td class="num">52.00</td>
+      <td class="num">1,040.00</td>
+      
+    </tr>
+  </table>
+    <div class="bottom"><div class="box"><b>备注</b><br><br>请按 10kg/ctn 标准包装交付，随货提供批次号、检测报告和合格证明。<br><br><b>PR No.:</b> PR-LH-202606-044</div><table class="total"><tr><td>Subtotal</td><td class="num">USD 1,040.00</td></tr><tr><td>Discount</td><td class="num">0.00</td></tr><tr class="grand"><td>Grand Total</td><td class="num">USD 1,040.00</td></tr></table></div>
+    <div class="qa"><div>制单 Prepared<div class="sigline"></div>2026-06-12</div><div>采购审核 Reviewed<div class="sigline"></div>2026-06-12</div><div>供应商确认 Supplier<div class="sigline"></div>__/__/__</div></div>
+    <div class="footer"><span>Synthetic demo PO for ADP x Lark Base.</span><span>LYCN-PO-202606-001 | Page 1/1</span></div>
+  </section>

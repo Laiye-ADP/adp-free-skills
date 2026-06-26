@@ -1,0 +1,210 @@
+{
+  "data": {
+    "extraction_result": [
+      {
+        "field_name": "客户名称",
+        "field_values": [
+          {
+            "field_value": "Rheinwerk Robotics GmbH",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "订单编号",
+        "field_values": [
+          {
+            "field_value": "LYDE-PO-202606-027",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "币种",
+        "field_values": [
+          {
+            "field_value": "USD",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "送货地址",
+        "field_values": [
+          {
+            "field_value": "Hansastrasse 42, 80686 Munich, Germany",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "卖方名称",
+        "field_values": [
+          {
+            "field_value": "Laiye Technology Co., Ltd.",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "订单日期",
+        "field_values": [
+          {
+            "field_value": "2026-06-14",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "商品明细",
+        "field_confidence": 0.99,
+        "table_values": [
+          [
+            {
+              "field_name": "序号",
+              "field_values": [
+                {
+                  "field_value": "10",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "物料编码",
+              "field_values": [
+                {
+                  "field_value": "DE-OCR-710",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "厂家型号",
+              "field_values": [
+                {
+                  "field_value": "DE-OCR-710",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "描述",
+              "field_values": [
+                {
+                  "field_value": "OCR quality inspection kit / OCR-Pruefkit",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "数量",
+              "field_values": [
+                {
+                  "field_value": "8",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "单价",
+              "field_values": [
+                {
+                  "field_value": "150.00",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "未税单价",
+              "field_values": [
+                {
+                  "field_value": "150.00",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "到货日期",
+              "field_values": [
+                {
+                  "field_value": "2026-07-22",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}
