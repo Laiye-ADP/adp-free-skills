@@ -1,0 +1,210 @@
+{
+  "data": {
+    "extraction_result": [
+      {
+        "field_name": "客户名称",
+        "field_values": [
+          {
+            "field_value": "深圳蓝海智能制造有限公司",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "订单编号",
+        "field_values": [
+          {
+            "field_value": "LYCN-PO-202606-001",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "币种",
+        "field_values": [
+          {
+            "field_value": "USD",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "送货地址",
+        "field_values": [
+          {
+            "field_value": "中国广东省深圳市南山区科技园北区 18 栋 5F",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "卖方名称",
+        "field_values": [
+          {
+            "field_value": "Laiye Technology Co., Ltd.",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "订单日期",
+        "field_values": [
+          {
+            "field_value": "2026-06-10",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "商品明细",
+        "field_confidence": 0.99,
+        "table_values": [
+          [
+            {
+              "field_name": "序号",
+              "field_values": [
+                {
+                  "field_value": "10",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "物料编码",
+              "field_values": [
+                {
+                  "field_value": "XY0006",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "厂家型号",
+              "field_values": [
+                {
+                  "field_value": "XY0006",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "描述",
+              "field_values": [
+                {
+                  "field_value": "Solder paste / 锡膏 WTO-LF4000A-6",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "数量",
+              "field_values": [
+                {
+                  "field_value": "20",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "单价",
+              "field_values": [
+                {
+                  "field_value": "52.00",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "未税单价",
+              "field_values": [
+                {
+                  "field_value": "52.00",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "到货日期",
+              "field_values": [
+                {
+                  "field_value": "2026-07-05",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

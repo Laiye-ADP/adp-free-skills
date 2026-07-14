@@ -1,0 +1,210 @@
+{
+  "data": {
+    "extraction_result": [
+      {
+        "field_name": "客户名称",
+        "field_values": [
+          {
+            "field_value": "New Wave Automation Thailand Co., Ltd.",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "订单编号",
+        "field_values": [
+          {
+            "field_value": "LYTH-PO-202606-006",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "币种",
+        "field_values": [
+          {
+            "field_value": "USD",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "送货地址",
+        "field_values": [
+          {
+            "field_value": "88/21 Moo 9, Bangna-Trad Road, Bangkok, Thailand",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "卖方名称",
+        "field_values": [
+          {
+            "field_value": "Laiye Technology Co., Ltd.",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "订单日期",
+        "field_values": [
+          {
+            "field_value": "2026-06-13",
+            "field_confidence": 0.99,
+            "references": [
+              {
+                "page_no": 1
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "field_name": "商品明细",
+        "field_confidence": 0.99,
+        "table_values": [
+          [
+            {
+              "field_name": "序号",
+              "field_values": [
+                {
+                  "field_value": "10",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "物料编码",
+              "field_values": [
+                {
+                  "field_value": "TH-FLOW-810",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "厂家型号",
+              "field_values": [
+                {
+                  "field_value": "TH-FLOW-810",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "描述",
+              "field_values": [
+                {
+                  "field_value": "Flow inspection module",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "数量",
+              "field_values": [
+                {
+                  "field_value": "15",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "单价",
+              "field_values": [
+                {
+                  "field_value": "36.00",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "未税单价",
+              "field_values": [
+                {
+                  "field_value": "36.00",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "field_name": "到货日期",
+              "field_values": [
+                {
+                  "field_value": "2026-07-18",
+                  "field_confidence": 0.99,
+                  "references": [
+                    {
+                      "page_no": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        ]
+      }
+    ]
+  }
+}

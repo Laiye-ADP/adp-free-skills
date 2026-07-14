@@ -1,0 +1,39 @@
+{
+  "skill_name": "order-auto-entry",
+  "version": "2.0.0",
+  "description": "采购订单邮件收单、ADP 识别与飞书 Base 待审核录入",
+  "adp_provider": "auto",
+  "adp_api_base_url": "https://adp.laiye.com",
+  "adp_api_key_env": "ADP_API_KEY",
+  "adp_app_id": "e7ae987c67c211f1b89200505687d9c5",
+  "base_token": "<FEISHU_BASE_TOKEN>",
+  "code_table_id": "<CODE_MAP_TABLE_ID>",
+  "history_table_id": "<HISTORY_TABLE_ID>",
+  "audit_table_id": "<PENDING_AUDIT_TABLE_ID>",
+  "reviewer_user_id": "<REVIEWER_USER_OPEN_ID>",
+  "chat_id": "",
+  "lark_identity": "user",
+  "notify_identity": "bot",
+  "mail_identity": "user",
+  "mailbox": "me",
+  "attachment_field": "订单源文件",
+  "adp_cli": "adp",
+  "lark_cli": "lark-cli",
+  "settings": {
+    "notify_on_success": true,
+    "skip_duplicates": true,
+    "upload_source_file": true,
+    "price_variance_threshold": 0.2
+  },
+  "mail_defaults": {
+    "filter": {
+      "folder": "inbox",
+      "has_attachment": true
+    },
+    "query": "",
+    "max": 20,
+    "poll_interval_seconds": 300
+  },
+  "dashboard_id": "",
+  "archive_workflow_id": ""
+}

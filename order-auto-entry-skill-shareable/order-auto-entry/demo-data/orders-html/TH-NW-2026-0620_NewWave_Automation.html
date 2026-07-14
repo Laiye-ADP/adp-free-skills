@@ -1,0 +1,66 @@
+<!doctype html><meta charset="utf-8"><style>
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: white;
+  color: #111827;
+  font-family: Arial, "Arial Unicode MS", "PingFang SC", "Hiragino Sans", sans-serif;
+  font-size: 10.4px;
+  line-height: 1.22;
+}
+.page {
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  padding: 10mm 10mm 8mm;
+  position: relative;
+  background: #fff;
+}
+table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+td, th { border: 1px solid #111827; padding: 4px 5px; vertical-align: top; word-break: break-word; }
+th { font-weight: 900; text-align: center; background: #d9dde3; }
+.num { text-align: right; white-space: nowrap; }
+.center { text-align: center; }
+.label { font-weight: 900; }
+.muted { color: #555; }
+.small { font-size: 8.5px; }
+.footer {
+  position: absolute;
+  left: 10mm;
+  right: 10mm;
+  bottom: 7mm;
+  display: flex;
+  justify-content: space-between;
+  color: #555;
+  font-size: 8.3px;
+}
+.sigline { border-top: 1px dashed #111827; width: 72%; margin: 7mm auto 2mm; }
+
+    .header { display:grid; grid-template-columns:42mm 1fr 45mm; gap:8mm; align-items:start; }
+    .logo { color:#0875be; font-weight:900; font-size:18px; }
+    .flag { width:34mm; height:18mm; background:#0875be; color:white; display:flex; align-items:center; justify-content:center; border-radius:0 9px 9px 0; font-size:18px; font-weight:900; }
+    .title { background:#d9d9d9; font-size:23px; font-weight:900; text-align:center; padding:7px 0; }
+    .pageNo { text-align:right; margin-top:25mm; }
+    .vendor { display:grid; grid-template-columns:1.15fr .85fr; gap:2mm; margin-top:5mm; }
+    .vendor table td:first-child { width:36mm; font-weight:900; }
+    .vendor table { height:47mm; }
+    .items { margin-top:3mm; }
+    .items th { background:#d0d0d0; }
+    .items td { height:82px; }
+    .sum { display:grid; grid-template-columns:1fr 76mm; margin-top:3mm; }
+    .sum > div { border:1px solid #111; min-height:32mm; padding:7px; }
+    .sum table td { border:0; padding:3px 4px; }
+    .approval { display:grid; grid-template-columns:repeat(4,1fr); border:1px solid #111; border-right:0; margin-top:4mm; }
+    .approval > div { height:32mm; border-right:1px solid #111; text-align:center; padding-top:5px; }
+    .thaiNote { font-size:8.5px; margin-top:5mm; }
+  </style><section class="page">
+    <div class="header"><div><div class="flag">NW</div><div class="logo">New Wave Automation</div><div class="small">Thailand</div></div><div class="title">PURCHASE ORDER</div><div class="pageNo">Page : 1/1</div></div>
+    <h3>บริษัท นิวเวฟ ออโตเมชั่น จำกัด / New Wave Automation Co., Ltd.</h3>
+    <div class="vendor"><table><tr><td>รหัสผู้ขาย/No:</td><td>LY-TH-2026</td></tr><tr><td>ชื่อผู้ขาย/Vendor:</td><td>Laiye Technology Co., Ltd.</td></tr><tr><td>ที่อยู่/Address:</td><td>Shenzhen, China</td></tr><tr><td>Job Task No.</td><td>TH-REQ-0620-09</td></tr></table><table><tr><td>เลขที่เอกสาร/No:</td><td>TH-NW-2026-0620</td></tr><tr><td>วันที่/Date:</td><td>2026-06-20</td></tr><tr><td>Requested Receipt Date:</td><td>2026-07-15</td></tr><tr><td>Currency:</td><td>USD</td></tr></table></div>
+    <table class="items"><tr><th style="width:7%">No.</th><th style="width:17%">Item Code</th><th style="width:16%">Program Code</th><th>Description</th><th style="width:8%">Qty.</th><th style="width:8%">Unit</th><th style="width:11%">Unit Price</th><th style="width:11%">Amount</th></tr><tr><td class="center">1</td><td>TH-FLOW-810</td><td>FLOW-AUTO</td><td>Flow inspection module / โมดูลตรวจสอบการไหล<br><br>สำหรับตรวจสอบการไหลในสายการผลิต</td><td class="num">12</td><td class="center">PCS</td><td class="num">36.00</td><td class="num">432.00</td></tr></table>
+    <div class="sum"><div><b>หมายเหตุ/Comment:</b><br>New customer order. Please confirm company profile, delivery schedule and first order payment terms.</div><div><table><tr><td>รวมจำนวนเงิน/Total</td><td class="num">432.00</td></tr><tr><td>ส่วนลดการค้า/Discount</td><td class="num">0.00</td></tr><tr><td><b>Grand Total</b></td><td class="num"><b>USD 432.00</b></td></tr></table></div></div>
+    <div class="approval"><div>จัดทำโดย<div class="sigline"></div>2026-06-20</div><div>อนุมัติโดย<div class="sigline"></div>2026-06-20</div><div>ผู้ขายยืนยัน<div class="sigline"></div>__/__/__</div><div>บัญชี<div class="sigline"></div>__/__/__</div></div>
+    <div class="thaiNote">กำหนดการรับวางบิลและจ่ายเช็คเป็นไปตามเงื่อนไขการสั่งซื้อ กรุณาแนบสำเนา PO ทุกครั้ง</div>
+    <div class="footer"><span>Thai demo PO for ADP x Lark Base.</span><span>TH-NW-2026-0620 | Page 1/1</span></div>
+  </section>
