@@ -11,7 +11,7 @@ ADP is an Agentic Document Processing (ADP) product independently developed by L
 ---
 
 > 📢 News  
-Laiye ADP Global Invoice Extraction · Free for Limited Time，Spots are limited, available on a first-come, first-served basis. [Learn more about: ADP Global Invoice Extraction Free Skill](adp-global-invoice-extraction-free/SKILL.md)
+Laiye ADP Global Invoice Extraction and Domestic Multi-Bill Extraction are free for a limited time. Spots are limited, available on a first-come, first-served basis. [Global Invoice Extraction Free Skill](adp-global-invoice-extraction-free/SKILL.md) | [Domestic Multi-Bill Extraction Free Skill](adp-domestic-multi-bill-extraction-free/SKILL.md)
 
 ---
 ## ✨ Core Advantages
@@ -70,6 +70,7 @@ This repository aggregates all document processing capabilities of ADP. All skil
 | Skill Name | Skill Description | Link |
 | ---- | ---- | ---- |
 | Global Invoice Free Edition | Limited-time offer: For **global cross-border finance, automation, and system integration scenarios**, provides high-precision, full-format, multi-language intelligent extraction for invoices, bills, and receipts. Fully compatible with structured standard documents, unstructured overseas purchase invoices, and consumer receipts. Whether it’s electronic PDFs, scanned copies, or image files, it can **output standardized JSON structured data with one click**, significantly reducing financial labor costs and seamlessly connecting end-to-end processes for business automation, smart reconciliation, and data entry. | [ADP Global Invoice Extraction Free Skill](adp-global-invoice-extraction-free/SKILL.md) |
+| Domestic Multi-Bill Free Edition | Limited-time offer: For **China finance reimbursement, bookkeeping, bill archiving, and travel expense automation scenarios**, automatically classifies and extracts structured fields from 30+ common domestic document types, including VAT invoices, train tickets, air transport itineraries, taxi invoices, medical invoices, fiscal bills, customs documents, and toll invoices. No login or API key is required. | [ADP Domestic Multi-Bill Extraction Free Skill](adp-domestic-multi-bill-extraction-free/SKILL.md) |
 
 ### General SKills
 | Skill name | Skill description | Link |

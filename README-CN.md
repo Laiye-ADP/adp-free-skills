@@ -10,7 +10,7 @@ ADP 是来也科技自研的**智能体文档处理产品 (Agentic Document Proc
 
 ---
 > 📢 公告  
-来也 ADP 全球发票提取功能限时免费，名额有限，先到先得：[ADP 全球发票提取免费技能](adp-global-invoice-extraction-free/SKILL.md)
+来也 ADP 全球发票提取、国内通用票据抽取功能限时免费，名额有限，先到先得：[ADP 全球发票提取免费技能](adp-global-invoice-extraction-free/SKILL.md) | [ADP 国内通用票据抽取免费技能](adp-domestic-multi-bill-extraction-free/SKILL.md)
 
 ---
 ## ✨ 产品核心优势
@@ -70,6 +70,7 @@ ADP 通过三层递进式架构，从单次字段抽取，到企业级全流程�
 | Skill 名称 | Skill 描述 | 链接 |
 | ---- | ---- | ---- |
 |全球发票免费版 | 限时活动：面向**全球跨境财务、自动化、系统集成场景**，提供高精度、全版式、多语种的发票、账单、收据智能抽取能力。全面兼容结构化标准票据、非结构化海外采购发票、消费小票、不论是电子 PDF、扫描件、还是图片文件，均可以**一键输出标准化 JSON 结构化数据**，大幅降低财务人力成本，彻底打通业务自动化、智能对账、数据入库全流程。 | [ADP 全球发票提取免费技能](adp-global-invoice-extraction-free/SKILL.md) |
+| 国内通用票据免费版 | 限时活动：面向**中国地区财务报销、记账、票据归档、差旅自动化场景**，提供国内 30+ 常见票据的自动分类与结构化字段抽取能力，覆盖增值税发票、火车票、机票行程单、出租车票、医疗票据、财政票据、海关单据、通行费票据等类型。无需登录、无需 API Key，可通过公开接口直接体验。 | [ADP 国内通用票据抽取免费技能](adp-domestic-multi-bill-extraction-free/SKILL.md) |
 
 ### 通用型 SKills
 | Skill 名称 | Skill 描述 | 链接 |
