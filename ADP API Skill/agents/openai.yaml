@@ -1,0 +1,4 @@
+interface:
+  display_name: ADP API
+  short_description: 直接调用 Laiye ADP OpenAPI
+  default_prompt: 使用 Laiye ADP OpenAPI 完成文档解析、结构化抽取或工作流处理。
