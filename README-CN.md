@@ -1,188 +1,445 @@
 <div align="center">
 
-# 📄 Laiye 智能体文档处理Skill集合 (ADP)
-
-ADP 是来也科技自研的**智能体文档处理产品 (Agentic Document Processing，简称 ADP)**。产品深度融合视觉语言模型（VLM）、大语言模型（LLM）与智能体自主决策技术，彻底颠覆传统文档处理模式，将行业沿用多年的**规则驱动的机械字段抽取**，全面升级为**目标驱动的全流程智能自动化**。ADP 彻底摆脱了传统 OCR、IDP 方案高度依赖人工标注、模板适配、规则维护的核心痛点，具备极强的泛化能力与自主适配能力，可高效应对企业业务中版式杂乱、语种多样、场景多变的复杂文档处理需求，为企业实现文档处理的降本、提效、提质。
-
-[English](README.md) | [简体中文](README-CN.md)
+# 🚀 来也 ADP 全球票据智能抽取 · 限时免费开放
+由来也科技 ADP 智能文档处理团队重磅出品，面向**全球跨境财务、自动化、系统集成场景**，提供高精度、全版式、多语种的发票、账单、收据智能抽取能力。全面兼容结构化标准票据、非结构化海外采购发票、消费小票、不论是电子 PDF、扫描件、还是图片文件，均可以**一键输出标准化 JSON 结构化数据**，大幅降低财务人力成本，彻底打通业务自动化、智能对账、数据入库全流程。
 
 </div>
 
----
-> 📢 公告  
-来也 ADP 全球发票提取、国内通用票据抽取功能限时免费，名额有限，先到先得：[ADP 全球发票提取免费技能](adp-global-invoice-extraction-free/SKILL.md) | [ADP 国内通用票据抽取免费技能](adp-domestic-multi-bill-extraction-free/SKILL.md)
+
+## ⭐ 选择 ADP 的核心优势
+✅ 全球化票据方案 | 接入简单，多语言识别精准可靠
+🌐 支持上百种语言：可识别英语、日语、韩语、德语、法语、泰语等主流语种的发票与收据。
+📄 全版式兼容：适配各国标准增值税发票、东南亚税务单据、非结构化收据及混合版式凭证。
+🎯 抽取准确率超99%：精准提取关键字段，大幅削减人工核验、翻译与数据录入成本。
+⚡ 高速批量处理：数分钟内即可完成上百份文档解析，显著提升工作效率。
+🤖 AI 持续优化：模型可基于业务数据不断迭代调优，识别效果愈发精准，并支持个性化适配。
+
+> 来也 ADP 接口**限时免费开放**，名额有限，先到先得！
+
+## 📌 适用场景
+| 用户群体 | 使用场景 |
+| ---- | ---- |
+| 财务团队 | 从多语言发票、海外票据中提取关键数据，用于财务报销与供应商结算等场景。 |
+| 智能体用户 | 一键安装 ADP Skill 至国内Coze、Workbuddy、Openclaw、Dify、Manus等主流智能体平台，实现文档自动识别。 |
+| 开发者 | 迁移至ADP API接口，抽取准确率达98%以上，5分钟即可开始免费使用。 |
 
 ---
-## ✨ 产品核心优势
-相较于传统文档处理方案，ADP 依托智能体技术与多模态模型，无需标注、无需训练即可达到更高的准确率，以及更加广阔文档适应性
 
-1. **多模态深度融合，零标注零训练极速落地**
-融合 VLM 视觉理解与 LLM 语义理解双重能力，也是实现零标注、零训练的核心基础。打破传统方案必须依赖海量样本标注、模型迭代训练、人工配置规则的落地门槛。支持**自然语言自定义抽取需求**，无需逐个配置字段、无需适配固定模板，仅需1份样本即可快速适配全新文档类型，大幅缩短项目上线周期，告别反复迭代优化的高额人力成本。同时可精准读懂文档逻辑结构、层级关系、业务语义，完美适配无框线表格、复杂混排版式、手写体、印章水印干扰、模糊拍摄件、双层PDF、扫描件等复杂场景，全方位还原真实业务文档信息。
+## 📄 快速开始
 
-2. **全语种统一模型，一套架构覆盖全球语种**
-无需单独兼容、部署各类小语种独立OCR模型，ADP 单套模型即可完成全部语种处理。内置百余种语种通用能力，原生支持简繁中文、英语、日语、法语、东南亚、欧美等多国语言及混合语种文档识别，无需额外安装语言包、无需单独适配语种模型，一站式满足企业国内、海外全球化业务文档处理需求。
+### 步骤 1：选择接口地址
+我们为国内外用户提供独立的公有云接入地址，需按区域分别配置。就近接入可保障调用高速稳定，无需注册账号、无需 API 密钥，直接向下方接口地址发起请求即可。
 
-3. **自主学习迭代，持续越用越准**
-依托全新智能体架构，支持全自动自助优化。系统会自动记录每一处识别错误，自主学习并完成优化调整，同步输出优化后的效果。人员仅需判断是否采纳即可，全程无需手动标注、重新训练，彻底摆脱传统模型无法自我更新、文档改版就失效的问题。
+| 环境 | API 接口地址 |
+|------|---------|
+| **国际版** | `https://adp-global.laiye.com/public/v1/invoice-fast/extract` |
+| **国内版** | `https://adp.laiye.com/public/v1/invoice-fast/extract` |
 
-4. **低门槛易上手，Skill即插即用**
-告别复杂操作门槛，原生支持Skill能力，做到即插即用。搭载对话式工作流，只需向ADP智能体描述业务需求，系统就能自动编排生成完整工作流，全程无需人工手动配置，操作简单、上手零压力。
+### 步骤 2：发送请求
+选择任意一种文件上传方式，发送 `POST` 请求：
 
-
-## ⚖️ ADP vs 传统 OCR/IDP 核心差异
-从核心逻辑、落地成本、适配能力、迭代方式全方位对比，ADP 实现对传统文档处理方案的全面升级：
-
-| 对比维度 | 传统 OCR/IDP 方案 | ADP 智能体文档处理方案 |
-|:---|:---|:---|
-| **核心工作逻辑** | 机械字符识别 + 固定规则字段抽取，仅识别文本坐标，无业务语义理解 | 语义深度理解 + 智能体目标驱动，读懂文档结构与业务逻辑，自主完成处理任务 |
-| **落地门槛** | 高门槛，需大量样本标注、人工配置字段、编写规则、模型训练迭代 | 零门槛，无需标注、无需训练，自然语言配置需求，极速上线 |
-
-
-## 🏗️ ADP全新产品架构：由点到面解决复杂文档问题
-
-ADP 通过三层递进式架构，从单次字段抽取，到企业级全流程自动化，再到长期沉淀专属能力，在同一平台完成文档处理全生命周期管理。
-
-| 层级 | 定位 | 业务示例 |
-|:---|:---|:---|
-| 🎯 **点：基础解析与抽取** | “读懂文档、抽准字段”，支持发票/订单/合同等单文档结构化处理 | 一次性抽取海外发票的金额、日期、供应商信息 |
-| 📈 **线：端到端文档工作流** |多步骤校验、计算、格式转换串联成自动化流程 | 发票抽取 → 合同匹配 → 金额校验 → 推送 ERP 全流程 |
-| 🔁 **面：人机协同闭环进化** |人工复核修正驱动持续学习优化，形成数据飞轮 | 修正几次金额格式后，系统自动适配意大利发票小数写法，越用越准 |
-
-> 核心价值：从临时单字段抽取 → 企业级全流程自动化 → 长期沉淀专属能力，同一平台全部实现。
-
-
-# 🛠️ ADP Skill 介绍
-本 Skill 依托 ADP 官方 CLI 工具实现能力调用。Agent 无需对接 API、编写复杂交互代码，仅通过简单命令即可完成调用。相比调用API的Skill方案，CLI免去接口调试、数据组装、逻辑编码等繁琐步骤，简化集成流程，让文档处理能力可以快速被各类Agent调度使用。
-
-## 🛠️ ADP Skill 能力分类
-本项目汇总 ADP 全量文档处理能力，所有 Skill 按能力定位分为**通用型、场景型、专项功能型三类**，可根据业务需求灵活选用。
-
-| 类型名称 | 能力说明 | 适用对象/场景 | Skill 示例 |
-|:---|:---|:---|:---|
-| 🧩 **通用型** | 集成 ADP 全套能力，包含文档解析、文档抽取（自定义抽取、开箱即用抽取）、工作流、人机协同等全功能模块 | 需要使用完整文档处理能力、功能诉求全面的用户 | [智能体文档抽取与解析](agentic-doc-parse-and-extract/SKILL.md) |
-| 🎯 **专项功能型** | 对 ADP 各项原子能力单独封装，功能单一且轻量化，无需搭配组合能力 | 仅存在单一种类文档处理需求、追求极简调用的用户 | [中国居民身份证识别与抽取](id-card-recognition-and-extract/SKILL.md) |
-| 📂 **场景型** | 聚焦垂直业务场景，整合 ADP 能力与上下游配套能力，打造端到端解决方案，能力范围不局限于文档处理本身 | 有完整业务流程诉求、需要一站式场景化解决方案的用户 | [从邮箱获取并汇总发票](invoice-extractor-from-mail/SKILL.md) |
-
-
-## 📋 ADP Skills 速览表
-
-### 限时免费 SKill
-| Skill 名称 | Skill 描述 | 链接 |
-| ---- | ---- | ---- |
-|全球发票免费版 | 限时活动：面向**全球跨境财务、自动化、系统集成场景**，提供高精度、全版式、多语种的发票、账单、收据智能抽取能力。全面兼容结构化标准票据、非结构化海外采购发票、消费小票、不论是电子 PDF、扫描件、还是图片文件，均可以**一键输出标准化 JSON 结构化数据**，大幅降低财务人力成本，彻底打通业务自动化、智能对账、数据入库全流程。 | [ADP 全球发票提取免费技能](adp-global-invoice-extraction-free/SKILL.md) |
-| 国内通用票据免费版 | 限时活动：面向**中国地区财务报销、记账、票据归档、差旅自动化场景**，提供国内 30+ 常见票据的自动分类与结构化字段抽取能力，覆盖增值税发票、火车票、机票行程单、出租车票、医疗票据、财政票据、海关单据、通行费票据等类型。无需登录、无需 API Key，可通过公开接口直接体验。 | [ADP 国内通用票据抽取免费技能](adp-domestic-multi-bill-extraction-free/SKILL.md) |
-
-### 通用型 SKills
-| Skill 名称 | Skill 描述 | 链接 |
-| ---- | ---- | ---- |
-| 智能体文档抽取与解析 | 支持基于 AI 对发票、订单、票据、长文本、国内常用证件等高频文档进行智能解析与关键信息提取；可针对非标业务文档创建可复用的自定义模板。具备批量并发处理能力，搭配人工复核机制与可灵活配置的审核规则，助力财务、行政、人事等部门实现文档录入全流程自动化。 | [智能体文档抽取与解析](agentic-doc-parse-and-extract/SKILL.md) |
-
-### 专项功能型 SKills
-| Skill 名称 | Skill 描述 | 链接 |
-| ---- | ---- | ---- |
-| 全球海外发票识别与抽取 | 支持多语种、多币种全球发票识别与信息提取，可精准抓取发票编号、日期、供应商、采购方、币种、税额、总金额及明细条目，并输出标准化 JSON 格式数据。无需额外配置、开箱即用，适用于应付账款自动化、费用报销及跨境贸易单据处理场景。 | [全球海外发票识别与抽取](global-invoice-recognition-and-extraction\SKILL.md) |
-| 中国地区30+常用发票抽取与发票查验 | 支持增值税专用发票、增值税普通发票、增值税电子发票、出租车票、火车票、飞机行程单、过路费发票、定额发票、客运汽车票、财政票据等30+常见国内票据类型的自动分类与全量字段抽取，输出结构化JSON，零配置开箱即用，适用于费用报销、财务记账、发票验真、差旅报销自动化等场景。 | [中国地区30+常用发票抽取与发票查验](financial-receipt-recognition-and-extraction\SKILL.md) |
-| 通用文档解析 | 支持 PDF、图片、扫描件、Office 文件等十余种格式解析。可按需输出标准结构化 JSON或规范 Markdown格式：提取关键字段生成 JSON 数据，完整留存标题、表格、列表、段落等原有排版转为 Markdown 文档。产品无需额外配置、开箱即用，可满足文档存检、数据流转、跨系统对接、内容迁移、文档整理及大模型上下文准备等各类业务需求。 | [JSON输出](pdf-to-structured-json\SKILL.md) 、[Markdown输出](pdf-to-structured-markdown\SKILL.md)|
-| 全球采购订单识别与抽取 | 可精准提取各类格式采购单、销售单的全量字段，包括单据编号、订单日期、卖方、采购方 / 客户、客户地址、收货人、收货地址、币种、总金额，以及物料编码、物料描述、数量、税率、含税单价、含税金额、交货日期等明细条目。结果以标准 JSON 格式输出，无需配置、开箱即用，适用于电商订单录入、供应链对账、仓储管理自动化等场景。 | [全球采购订单识别与抽取](purchase-order-recognition-and-extraction\SKILL.md)  |
-| 开户许可证识别与抽取 | 支持开户许可证的核准号、编号、基本存款账户、法定代表人、开户银行、银行账号等关键字段的精准抽取，输出结构化JSON，零配置开箱即用，适用于企业资质核验、工商信息查询等场景。 | [开户许可证识别与抽取](bank-account-permit-recognition-and-extraction\SKILL.md) |
-| 营业执照识别与抽取 | 支持营业执照全量字段的精准抽取——注册号、名称、类型、法定代表人、成立日期、营业期限、经营范围、登记机关、发证日期，输出结构化JSON，零配置开箱即用，适用于企业资质核验、工商信息查询等场景。 | [营业执照识别与抽取](business-license-recognition-and-extraction\SKILL.md) |
-| 银行卡识别与抽取 | 支持银行卡正面关键字段的精准抽取——卡号、发卡机构、有效期、卡类型，输出结构化JSON，零配置开箱即用，适用于开户审核、支付绑定、金融信息录入等场景。 | [银行卡识别与抽取](credit-card-recognition-and-extraction\SKILL.md) |
-| 中国机动车驾驶证识别与抽取 | 支持驾驶证正副页全量字段的精准抽取——驾驶证证号、姓名、性别、国籍、住址、出生日期、初次领证日期、准驾车型、有效期始至、签发机构、档案编号，输出结构化JSON，零配置开箱即用，适用于驾驶员资质核验、网约车/货运司机准入审核等场景。 | [中国机动车驾驶证识别与抽取](driving-license-recognition-and-extraction\SKILL.md) |
-| 港澳通行证识别与抽取 | 支持港澳通行证关键字段的精准抽取——姓名、姓名拼音、性别、出生日期、证件号码、签发日期、有效期至、签发机关，输出结构化JSON，零配置开箱即用，适用于出入境审核、签注办理、身份核验等场景。 | [港澳通行证识别与抽取](hk-macau-permit-recognition-and-extraction\SKILL.md) |
-| 中国居民户口本识别与抽取 | 支持户口本首页及个人页全量字段的精准抽取——户别、户主姓名、户号、住址、姓名、与户主关系、曾用名、性别、出生地、民族、籍贯、出生日期、本市其他住址、宗教信仰、身份证号码、身高、血型、文化程度、婚姻状况、服务处所、职业、登记日期、编号，输出结构化JSON，零配置开箱即用，适用于户籍核验、信息录入、开户审核等场景。 | [中国居民户口本识别与抽取](household-register-recognition-and-extraction\SKILL.md) |
-| 中国居民身份证识别与抽取 | 支持身份证正反面8大关键字段的精准抽取——姓名、性别、民族、出生、住址、身份证号码、签发机构、有效期限，输出结构化JSON，零配置开箱即用，适用于身份核验、信息录入、开户审核等场景。 | [中国居民身份证识别与抽取](id-card-recognition-and-extraction\SKILL.md) |
-| 组织机构代码证识别与抽取 | 支持组织机构代码证的统一社会信用代码、名称、类型、法定代表人、成立日期、营业期限、经营范围、登记机关、发证日期等关键字段的精准抽取，输出结构化JSON，零配置开箱即用，适用于企业资质核验、工商信息查询等场景。 | [组织机构代码证识别与抽取](org-cert-recognition-and-extraction\SKILL.md) |
-| 中国护照识别与抽取 | 支持护照资料页关键字段的精准抽取——姓名、姓名拼音、性别、出生日期、出生地、国籍、护照号码、签发日期、有效期至、签发机关，输出结构化JSON，零配置开箱即用，适用于出入境审核、签证办理、身份核验等场景。 | [护照识别与抽取](passport-recognition-and-extraction\SKILL.md) |
-| 中国机动车出厂合格证识别与抽取 | 支持车辆合格证全量字段的精准抽取——合格证编号、发证日期、车辆制造企业名称、车辆品牌、车辆型号、车辆识别代号/车架号、发动机型号/号、车身颜色、燃料种类、排放标准、外廓尺寸、总质量等30+关键字段，输出结构化JSON，零配置开箱即用，适用于车辆上户、二手车交易、车辆资产管理等场景。 | [中国机动车出厂合格证识别与抽取](vehicle-certificate-recognition-and-extraction\SKILL.md) |
-| 中国机动车行驶证识别与抽取 | 支持行驶证正副页全量字段的精准抽取——号牌号码、车辆类型、所有人、住址、使用性质、品牌型号、车辆识别代号VIN、发动机号码、注册日期、发证日期等20+关键字段，输出结构化JSON，零配置开箱即用，适用于车辆登记、保险投保、网约车/货运车辆准入等场景。 | [中国机动车行驶证识别与抽取](vehicle-license-recognition-and-extraction\SKILL.md) |
-
-### 场景型 SKills
-| Skill 名称 | Skill 描述 | 链接 |
-| ---- | ---- | ---- |
-| 从邮箱获取发票并抽取 | 专为跨境贸易企业应付账款财务团队打造。可从邮箱（支持 IMAP/OAuth 协议）或本地文件自动获取发票附件，通过 ADP 批量提取发票编号、金额、币种等关键字段，并将结果导出至 Excel 或业务系统，全程无需手动录入数据。 | [从邮箱获取发票并抽取](invoice-extractor-from-mail\SKILL.md) |
-
-
-# ADP Skills 通用使用步骤
-
-## 第一步：安装 ADP CLI
-
+#### 方式 1：文件 URL 地址
 ```bash
-# 方法 1: npm（推荐，全平台通用）
-npm install -g @laiye-adp/agentic-doc-parse-and-extract-cli
+curl -X POST "https://adp-global.laiye.com/public/v1/invoice-fast/extract" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "file_url": "shturl.cc/vZd6rD9NxsmfNZPF5KjsnB78s"
+  }'
+
 ```
 
-```bash
-# 方法 2: Shell 脚本（Linux / macOS，无 npm 环境时使用）
-curl -fsSL https://raw.githubusercontent.com/laiye-ai/adp-cli/main/scripts/adp-init.sh | bash
-```
+#### 方式二：Base64 编码文件内容
 
 ```bash
-# 方法 3: PowerShell 脚本（Windows，无 npm 环境时使用）
-irm https://raw.githubusercontent.com/laiye-ai/adp-cli/main/scripts/adp-init.ps1 | iex
+curl -X POST "https://adp-global.laiye.com/public/v1/invoice-fast/extract" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "file_base64": "<base64-encoded-file-content>"
+  }'
 ```
 
-或从 [GitHub Releases](https://github.com/laiye-ai/adp-cli/releases) 下载预编译二进制文件包。
+#### Python 请求示例
 
+```python
+import base64, requests
 
-## 第二步：获取 ADP API Key 与认证配置
+with open("invoice.pdf", "rb") as f:
+    b64 = base64.b64encode(f.read()).decode()
 
-### 1. 访问 ADP 门户获取凭证
-我们为国内和海外用户提供了独立的公有云访问地址，需按地区分别配置。就近访问可更好地保障高速稳定的网络调用。同时，ADP 产品所属来也科技已通过 **ISO/IEC 27001:2022 信息安全管理体系认证** 与 **SOC 2 独立审计认证**，为您的文档数据处理提供全流程安全合规保障。
-
-| 地区 | 登录地址 | API Base URL |
-|-----|----------|--------------|
-| 中国大陆 | [https://adp.laiye.com/](https://adp.laiye.com/?utm_source=github) | `https://adp.laiye.com/` |
-| 海外地区 | [https://adp-global.laiye.com/](https://adp-global.laiye.com/?utm_source=github) | `https://adp-global.laiye.com/` |
-
-### 2. 注册/登录后获取 API Key
-新用户需先注册 ADP 账号，注册后即可获得每月 100 免费积分。
-- 登录后，点击个人头像，即可直接进入 `API_Key` 入口。
-
-### 3. 完成认证配置
-```bash
-adp config set --api-key <your-api-key>
-adp config set --api-base-url https://adp.laiye.com
+response = requests.post(
+    "https://adp-global.laiye.com/public/v1/invoice-fast/extract",
+    json={"file_base64": b64},
+    timeout=180,
+)
+print(response.json())
 ```
 
-### 4. 验证配置
-```bash
-adp config get
+### 3. 获取结果（示例）
+
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `success` | 布尔值 | 请求执行状态 |
+| `doc_type` | 字符串 | 识别文档类型：`invoice` 发票 / `receipt` 收据 |
+| `extraction_result` | 数组 | 结构化抽取字段集合，遵循 ADP 标准接口格式 |
+| `aigc` | 对象 | AIGC 内容合规标识，符合国内相关标注规范 |
+| `upgrade_message` | 字符串 | 升级引导文案，将根据部署区域自动展示对应语言 |
+| `signup_url` | 字符串 | 注册页面链接 |
+
+```json
+{
+    "success": true,
+    "doc_type": "invoice",
+    "extraction_result": [
+        {
+            "field_key": "invoice_number",
+            "field_name": "发票号码",
+            "field_values": [
+                {
+                    "field_value": "09071666",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "09071666"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "invoice_date",
+            "field_name": "发票日期",
+            "field_values": [
+                {
+                    "field_value": "2019-11-28",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "2019-11-28"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "supplier_name",
+            "field_name": "供应商名称",
+            "field_values": [
+                {
+                    "field_value": "北京******公司",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "北京******公司"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "supplier_vat_number",
+            "field_name": "供应商增值税号",
+            "field_values": [
+                {
+                    "field_value": "9111******4393T",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "9111******4393T"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "customer_name",
+            "field_name": "客户名称",
+            "field_values": [
+                {
+                    "field_value": "湖南*******公司",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "湖南*******公司"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "currency",
+            "field_name": "币种",
+            "field_values": [
+                {
+                    "field_value": "CNY",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "CNY"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "total_amount",
+            "field_name": "总金额（含税）",
+            "field_values": [
+                {
+                    "field_value": "¥1600.00",
+                    "field_confidence": 0.0,
+                    "references": [
+                        {
+                            "search_text": "¥1600.00"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "field_key": "line_items",
+            "field_name": "商品/服务明细表格",
+            "table_values": [
+                [
+                    {
+                        "field_key": "line_items_item_code",
+                        "field_name": "项目代码",
+                        "field_values": [
+                            {
+                                "field_value": "",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_description",
+                        "field_name": "描述",
+                        "field_values": [
+                            {
+                                "field_value": "*住宿服务*住宿服务",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "*住宿服务*住宿服务"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_quantity",
+                        "field_name": "数量",
+                        "field_values": [
+                            {
+                                "field_value": "2",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "2"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_unit_price",
+                        "field_name": "单价",
+                        "field_values": [
+                            {
+                                "field_value": "754.716981132",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "754.716981132"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_total_amount",
+                        "field_name": "总金额",
+                        "field_values": [
+                            {
+                                "field_value": "1509.43",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "1509.43"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_rate",
+                        "field_name": "税率",
+                        "field_values": [
+                            {
+                                "field_value": "6%",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "6%"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "field_key": "line_items_tax",
+                        "field_name": "税金",
+                        "field_values": [
+                            {
+                                "field_value": "90.57",
+                                "field_confidence": 0.0,
+                                "references": [
+                                    {
+                                        "search_text": "90.57"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            ]
+        }
+    ],
+    "aigc": {
+        "Label": "AIGCLabelType.AI_GENERATED",
+        "ContentProducer": "001191110108587659081E10001",
+        "ProduceID": "e3563f165b4011f19f02d85ed35661fd",
+        "ReservedCode1": "34c55657beb0071fecf8abce14b0cdee",
+        "ContentPropagator": "001191110108587659081E10001",
+        "PropagateID": "e3563f165b4011f19f02d85ed35661fd",
+        "ReservedCode2": "34c55657beb0071fecf8abce14b0cdee",
+        "ProcessingTypes": [
+            "ocr",
+            "llm_extract"
+        ]
+    },
+    "upgrade_message": "注册即可获得100积分/月，解锁全部能力，含多层税率计算+识别能力自主进化+更多字段与更高性能",
+    "signup_url": "https://adp.laiye.com/"
+}
+```
+## 📄 抽取字段说明
+
+### 普通文本字段
+| 字段标识 | 字段名称（示例） | 说明 |
+|-----------------------|------------------------|-----------------------------------------------------------------------------|
+| `invoice_number`      | 发票编号         | 发票唯一编号 |
+| `invoice_date`        | 开票日期         | 发票开具日期 |
+| `supplier_name`       | 销方名称         | 开票供应商名称 |
+| `supplier_vat_number` | 销方税号         | 供应商增值税登记号 |
+| `customer_name`       | 购方名称         | 付款客户名称 |
+| `currency`            | 币种             | 发票结算货币代码（例：USD、EUR） |
+| `total_amount_inc_tax`| 含税总金额       | 发票含税总金额 |
+
+### 表格明细字段
+| 字段标识 | 字段名称（示例） | 说明 |
+|-------------------|----------------------|-----------------------------------------------------------------|
+| `line_items`        | 商品明细           | 商品/服务明细表格数据 |
+| `item_code`         | 商品编码           | 明细商品SKU/编码 |
+| `description`       | 商品描述           | 明细商品/服务说明 |
+| `quantity`          | 数量               | 商品采购数量 |
+| `unit_price`        | 单价               | 商品单件价格 |
+| `total_amount`      | 分项金额           | 单条明细合计金额 |
+| `tax_rate`          | 税率               | 商品适用税率 |
+| `tax_amount`        | 税额               | 单条明细对应税费 |
+
+### 通用字段结构
+| 字段 | 类型 | 说明 |
+|------|------|------|
+| `field_key` | 字符串 | 字段唯一标识 |
+| `field_name` | 字符串 | 字段名称 |
+| `field_values` | 数组 | 提取结果列表（支持多值） |
+| `field_values[].field_confidence` | 浮点数 | 置信度（取值范围 0.0 - 1.0） |
+| `field_values[].references` | 数组 | 文档内引用位置（如坐标框、页码） |
+| `line_items_item_code` | 字符串 | 明细项编码/库存单位 |
+| `line_items_description` | 字符串 | 明细项描述 |
+| `line_items_quantity` | 字符串 | 明细项数量 |
+| `line_items_unit_price` | 字符串 | 明细项单价 |
+| `line_items_total_amount` | 字符串 | 明细项金额合计 |
+| `line_items_tax_rate` | 字符串 | 明细项税率 |
+| `line_items_tax` | 字符串 | 明细项税额 |
+
+> **字段区分规则**：若返回包含 `table_values`，则为表格字段，读取该数据；否则为普通文本字段，读取 `field_values`。
+
+
+## ⚠️ 使用限制
+| 限制项 | 规则说明 |
+|------|---------------------|
+| 文件大小 | 不超过 2 MB |
+| 文件页数 | 仅支持单页，多页 PDF 将被拒绝 |
+| 支持格式 | jpeg、jpg、png、bmp、tiff、pdf、doc、docx、xlsx、ofd |
+| URL 权限 | 仅支持公网 HTTP/HTTPS 链接，不允许内网、私有 IP |
+| 单IP每分钟 | 30 次（60秒内） |
+| 单IP每日 | 30 次（一天） |
+| 全局每日限额 | 5000 次 |
+
+超出限制将返回 HTTP `429`，响应中附带注册引导信息。
+```json
+{
+  "code": "rate_limited_day",
+  "message": "当日免费额度已用尽，请次日再来。",
+  "upgrade_message": "注册账号每月可享100次免费额度，解锁更多字段、更强性能、全税种识别与模型自主优化能力",
+  "signup_url": "https://adp-global.laiye.com/?utm_source=promotions"
+}
 ```
 
-**注意事项**：
-1. 如果 API Key 和 API Base URL 已配置完成，建议将配置信息存储到环境变量中，避免每次使用时重复配置。
-2. 如果 API Key 和 API Base URL 尚未配置，请按照以上步骤完成配置。
+## ❌ 错误码对照表
 
-## 第三步：获取 ADP APP ID
+| HTTP 状态码 | 错误码 | 说明 |
+|-------------|--------|------|
+| 400 | `invalid_input` | 未传入文件，或同时传入 `file_base64` 与 `file_url` 两个参数 |
+| 400 | `invalid_base64` | `file_base64` 内容非标准 Base64 编码 |
+| 400 | `invalid_url` | `file_url` 格式非法，非 HTTP/HTTPS 协议 |
+| 400 | `ssrf_blocked` | 目标链接指向内网或私有 IP 地址，已拦截 |
+| 400 | `download_failed` | 从远程链接下载文件失败 |
+| 400 | `file_too_large` | 文件大小超过 2 MB 限制 |
+| 400 | `multi_page` | 检测到多页 PDF，仅支持单页文件 |
+| 400 | `unsupported_format` | 上传文件格式暂不支持 |
+| 429 | `rate_limited_minute` | 超出单 IP 每分钟调用上限（30 次/分钟） |
+| 429 | `rate_limited_day` | 超出单 IP 每日调用上限30 |
+| 429 | `rate_limited_global` | 全局每日调用额度5000已耗尽 |
+| 500 | `extraction_failed` | 服务端处理异常，请稍后重试 |
 
-ADP 应用分为两大类型：一类为开箱即用应用，由 ADP 团队完成专项训练与模型调优，可直接调用 API 使用，无需额外开展数据标注与模型训练；另一类为自定义应用，若现有开箱即用应用无法适配你的文档处理需求，可自主创建使用。两类应用可通过 `app_type` 字段进行区分。
+## 🚀 进阶能力说明
 
-| app_type | 类型及说明 |
-| ---------- | --------- |
-| `0` | 开箱即用应用（OOTB）：平台内置应用，`app_id` 以 `ootb_` 开头，无需创建，可直接调用使用 |
-| `1` | 自定义应用：由用户自主创建的文档抽取应用，`app_id` 为用户自定义标识 |
+本接口采用 `invoice-fast` 高速模型及预置字段配置，仅用于快速体验。
 
-> ... 其余步骤参考对应Skills文档即可 ...
+**升级至完整版 ADP 账号，即可解锁以下高级能力：**
+- 支持处理2MB以上的发票文件
+- 更高API调用频次，请求额度不限
+- 可自定义提取字段（按需增删）
+- 异步批量处理
+- 人工介入审核流程（HITL）
+- 支持Webhook回调
+- 适配更多文档类型（采购单、证件、国内发票等）
+- 对接Claude Desktop、Cursor等AI客户端，支持MCP工具集成
 
-## 📜 授权许可
-本产品仅限非商业场景免费使用、复制与分发，商业使用须取得书面授权；产品知识产权归我方所有，分发需完整保留相关声明、如实标注修改内容，使用风险由使用者自行承担，违规使用将终止许可并适用中国法律管辖。详细授权许可声明可参考[License](license.md)
+新用户注册即送 **100 免费点数**，试用全部完整版功能。国内外用户分设独立公有云接入地址，按地区分开配置，就近接入可实现跨网高速稳定调用。
+  - 中国地区 [登录](https://adp.laiye.com/?utm_source=promotions)
+  - 全球地区 [登录](https://adp-global.laiye.com/?utm_source=promotions)
 
 
 ## 📞 支持与联系
 - **CLI 使用指南：** [ADP CLI 使用指南](https://laiye-tech.feishu.cn/wiki/Hz3Vw1IQki3YQtk33gLcSdwSndc)
 - **API 接口文档：** [Open API 使用指南](https://laiye-tech.feishu.cn/wiki/PO9Jw4cH3iV2ThkMPW2c539pnkc)
 - **ADP 产品操作手册：** [公有云操作手册](https://laiye-tech.feishu.cn/wiki/UDYIwG42pisBbFkJI39ctpeKnWh)
-- **问题反馈：** [GitHub Issues](https://github.com/Laiye-ADP/adp-skills/issues)
+- **问题反馈：** [GitHub Issues](https://github.com/laiye-ai-repos/adp-skill/issues)
 - **邮箱：** global_product@laiye.com
-- **官网：** [来也科技 ADP](https://laiye.com/product/adp-platform)
+- **官网：** [来也科技](https://laiye.com)
 
----
 
 <div align="center">
+[⬆ 返回顶部](#agentic_doc_parse_and_extract)
 
-**Built with ❤️ for the Agentic AI Future**  
-Copyright © 2026 [来也科技（北京）有限公司] 保留所有权利。
-
-[⬆ Back to Top](#-laiye-agentic-document-processing-adp)
+**用 ❤️ 构建智能体 AI 的未来**
+版权所有 © 2026 [来也科技（北京）有限公司] 保留所有权利。
 
 </div>
